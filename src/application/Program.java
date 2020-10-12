@@ -16,20 +16,14 @@ public class Program {
 		//String PASSWORD_PATTERN = "((?=.*\\\\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\\\\s)(?!.*[+\\\\-!]).{6,12})";
 		//System.out.println(Pattern.matches("[a-z]", s));
 		
-		
-		
-		
 		System.out.println("Teste de senha [" + s+"]");
-		
-		
+			
 		if (validaComplexidade(s) == 1) {
 			System.out.println("Senha válida");
-			System.out.println(validaComplexidade(s));
-			
+			System.out.println(validaComplexidade(s));		
 		}
 
 		sc.close();
-
 	}
 
 	public static int validaComplexidade(String string) {
@@ -96,10 +90,6 @@ public class Program {
 			result = 0;
 			System.out.println(result + " - Erro 8: Senha contém caracteres não aceitos.");
 		}
-
-
-		
-		
 		return result;
 	}
 }
