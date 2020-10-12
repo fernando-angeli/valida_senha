@@ -25,6 +25,7 @@ public class Program {
 
 		sc.close();
 	}
+	
 
 	public static int validaComplexidade(String string) {
 		
